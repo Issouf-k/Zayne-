@@ -1,0 +1,500 @@
+MODE D'EMPLOI ULTRA DÉTAILLÉ DU BOT VANSBOT
+
+Bienvenue dans ce guide complet d'utilisation du bot VansBot ! Ce guide est conçu pour les débutants absolus. Nous allons expliquer chaque commande étape par étape, avec des exemples concrets. Toutes les commandes commencent par un préfixe (généralement "." ou un autre caractère défini par l'admin du bot).
+
+================================================================================
+COMMANDES GÉNÉRALES
+================================================================================
+
+1. MENU / HELP
+   Commande: .menu ou .help
+   Description: Affiche le menu complet des commandes disponibles.
+   Utilisation: Tapez simplement ".menu" dans le chat.
+   Exemple: .menu
+   Résultat: Le bot envoie un message avec toutes les commandes organisées par catégories.
+
+2. PING
+   Commande: .ping
+   Description: Teste la réactivité du bot et affiche le temps de réponse.
+   Utilisation: Tapez ".ping" pour vérifier si le bot fonctionne.
+   Exemple: .ping
+   Résultat: Le bot répond avec son temps de réponse (ex: "Pong! 45ms").
+
+3. DATE
+   Commande: .date
+   Description: Affiche la date et l'heure actuelles.
+   Utilisation: Tapez ".date" pour connaître la date/heure.
+   Exemple: .date
+   Résultat: Le bot affiche quelque chose comme "Date actuelle: 15/10/2024 14:30:25".
+
+4. CONTACT
+   Commande: .contact
+   Description: Envoie un contact WhatsApp.
+   Utilisation: .contact <nom> <numéro>
+   Exemple: .contact "Jean Dupont" 33612345678
+   Résultat: Le bot envoie une carte de contact avec le nom et numéro spécifiés.
+
+5. LOCALISATION / LOC
+   Commande: .loc ou .localisation
+   Description: Envoie une localisation GPS.
+   Utilisation: .loc <non_du_lieu_sans_espace>
+   Exemple: .loc new_york
+   Résultat: Le bot envoie une carte avec la position GPS indiquée.
+
+6. INFO
+   Commande: .info
+   Description: Affiche les informations détaillées d'un contact.
+   Utilisation: .info <numéro> (sans le + ou 00)
+   Exemple: .info 33612345678
+   Résultat: Le bot affiche le nom, statut, photo de profil, etc. du contact.
+
+7. SETPP
+   Commande: .setpp
+   Description: Change la photo de profil du bot (admin seulement).
+   Utilisation: Répondez à une image avec ".setpp"
+   Exemple: Envoyez une image, puis répondez-lui avec ".setpp"
+   Résultat: La photo de profil du bot est changée.
+
+8. GETPP
+   Commande: .getpp
+   Description: Récupère la photo de profil d'un utilisateur.
+   Utilisation: .getpp <@mention> ou .getpp <numéro>
+   Exemple: .getpp @1234567890
+   Résultat: Le bot envoie la photo de profil de la personne mentionnée.
+
+9. QUOTE
+   Commande: .quote
+   Description: Envoie une citation inspirante aléatoire.
+   Utilisation: Tapez simplement ".quote"
+   Exemple: .quote
+   Résultat: Le bot envoie une citation motivante.
+
+10. AUTOREACT
+    Commande: .autoreact
+    Description: Active/désactive les réactions automatiques aux messages.
+    Utilisation: .autoreact on  ou  .autoreact off
+    Exemple: .autoreact on
+    Résultat: Le bot réagira automatiquement à tous les messages avec des emojis.
+
+11. AUTOWRITE
+    Commande: .autowrite ou .autotyping
+    Description: Active/désactive l'indicateur "en train d'écrire".
+    Utilisation: .autowrite on [durée]  ou  .autowrite off
+    Exemple: .autowrite on 5000
+    Résultat: Le bot montrera "en train d'écrire" pendant 5 secondes à chaque message.
+
+12. VCFGROUP
+    Commande: .vcfgroup
+    Description: Exporte tous les contacts du groupe dans un fichier VCF.
+    Utilisation: Tapez ".vcfgroup" dans un groupe.
+    Exemple: .vcfgroup
+    Résultat: Le bot envoie un fichier .vcf contenant tous les numéros du groupe.
+
+13. AUTOVUSTATUT
+    Commande: .autovustatut
+    Description: Active/désactive la visualisation automatique des statuts.
+    Utilisation: .autovustatut on  ou  .autovustatut off
+    Exemple: .autovustatut on
+    Résultat: Le bot verra automatiquement tous les nouveaux statuts.
+
+14. TAKE
+    Commande: .take
+    Description: Modifie le pack/auteur d'un sticker.
+    Utilisation: Répondez à un sticker avec .take <pack> <auteur>
+    Exemple: Répondez à un sticker avec ".take MonPack MonNom"
+    Résultat: Le sticker est renvoyé avec le nouveau pack et auteur.
+
+15. SETPREFIXE
+    Commande: .setprefixe
+    Description: Change le préfixe des commandes (admin seulement).
+    Utilisation: .setprefixe <nouveau_prefixe>
+    Exemple: .setprefixe !
+    Résultat: Toutes les commandes utiliseront maintenant "!" au lieu de ".".
+
+================================================================================
+COMMANDES MÉDIAS
+================================================================================
+
+16. IMG
+    Commande: .img
+    Description: Envoie une image stockée ou recherche sur internet.
+    Utilisation: .img <nom>  ou  .img web <recherche>
+    Exemple: .img chat  ou  .img web "chat mignon"
+    Résultat: Envoie l'image demandée ou recherche sur internet.
+
+17. GIF
+    Commande: .gif
+    Description: Envoie un GIF stocké.
+    Utilisation: .gif <nom>
+    Exemple: .gif danse
+    Résultat: Envoie le GIF demandé.
+
+18. VID / VIDEO
+    Commande: .vid ou .video
+    Description: Envoie une vidéo stockée.
+    Utilisation: .vid <nom> [qualité] [format]
+    Exemple: .vid musique hd mp4
+    Résultat: Envoie la vidéo demandée.
+
+19. AUD / AUDIO
+    Commande: .aud ou .audio
+    Description: Envoie un fichier audio stocké.
+    Utilisation: .aud <nom> [qualité] [format] [artiste]
+    Exemple: .aud jazz classique mp3 "Louis Armstrong"
+    Résultat: Envoie l'audio demandé.
+
+20. STK / STICKER
+    Commande: .stk ou .sticker
+    Description: Envoie un sticker stocké.
+    Utilisation: .stk <nom>
+    Exemple: .stk cool
+    Résultat: Envoie le sticker demandé.
+
+21. TOSTK
+    Commande: .tostk
+    Description: Convertit une image/vidéo en sticker.
+    Utilisation: Répondez à un média avec .tostk [nom]
+    Exemple: Répondez à une image avec ".tostk mon_sticker"
+    Résultat: L'image devient un sticker.
+
+22. VU / VV
+    Commande: .vu ou .vv
+    Description: devoile la vu unique .
+    Utilisation: .vu  ou  .vu private
+    Exemple: .vu
+    Résultat: le message en vu unique est decouvert .
+
+23. TOAUD
+    Commande: .toaud
+    Description: Convertit une vidéo en audio.
+    Utilisation: Répondez à une vidéo avec .toaud
+    Exemple: Répondez à une vidéo avec ".toaud"
+    Résultat: La piste audio de la vidéo est extraite.
+
+24. REACT
+    Commande: .react
+    Description: Ajoute une réaction emoji à un message.
+    Utilisation: Répondez à un message avec .react <emoji>
+    Exemple: Répondez à un message avec ".react 👍"
+    Résultat: L'emoji est ajouté au message.
+
+================================================================================
+COMMANDES STOCKAGE
+================================================================================
+
+25. STORE
+    Commande: .store
+    Description: Stocke un média pour utilisation future.
+    Utilisation: Répondez à un média avec .store <nom> <type>
+    Exemple: Répondez à une image avec ".store chat image"
+    Résultat: L'image est stockée sous le nom "chat".
+
+26. LIST
+    Commande: .list
+    Description: Liste tous les médias stockés.
+    Utilisation: Tapez ".list"
+    Exemple: .list
+    Résultat: Affiche la liste de tous les fichiers stockés par catégorie.
+
+27. DELMEDIA
+    Commande: .delmedia
+    Description: Supprime un média stocké.
+    Utilisation: .delmedia <type> <nom>
+    Exemple: .delmedia image chat
+    Résultat: L'image "chat" est supprimée du stockage.
+
+================================================================================
+COMMANDES ADMINISTRATION (GROUPES UNIQUEMENT)
+================================================================================
+
+28. WELCOME
+    Commande: .welcome
+    Description: Active/désactive les messages de bienvenue.
+    Utilisation: .welcome on  ou  .welcome off
+    Exemple: .welcome on
+    Résultat: Les nouveaux membres recevront un message de bienvenue.
+
+29. PROMOTE
+    Commande: .promote
+    Description: Promouvoir un membre au rang d'admin.
+    Utilisation: .promote <@mention> ou .promote <numéro>
+    Exemple: .promote @1234567890
+    Résultat: La personne mentionnée devient admin du groupe.
+
+30. PROMOTEALL
+    Commande: .promoteall
+    Description: Promouvoir tous les membres en admins.
+    Utilisation: Tapez ".promoteall" (admin seulement)
+    Exemple: .promoteall
+    Résultat: Tous les membres deviennent admins.
+
+31. DEMOTE
+    Commande: .demote
+    Description: Rétrograder un admin au rang de membre.
+    Utilisation: .demote <@mention> ou .demote <numéro>
+    Exemple: .demote @1234567890
+    Résultat: L'admin perd ses droits d'admin.
+
+32. DEMOTEALL
+    Commande: .demoteall
+    Description: Rétrograder tous les admins.
+    Utilisation: Tapez ".demoteall" (admin seulement)
+    Exemple: .demoteall
+    Résultat: Tous les admins deviennent membres simples.
+
+33. KICK / BAN
+    Commande: .kick ou .ban
+    Description: Expulse un membre du groupe.
+    Utilisation: .kick <@mention> ou .kick <numéro>
+    Exemple: .kick @1234567890
+    Résultat: La personne est expulsée du groupe.
+
+34. KICKALL / BANALL
+    Commande: .kickall ou .banall
+    Description: Expulse tous les membres (sauf admins).
+    Utilisation: .kickall  ou  .kickall stop (pour arrêter)
+    Exemple: .kickall
+    Résultat: Tous les membres non-admins sont expulsés.
+
+35. MUTE
+    Commande: .mute
+    Description: Met le groupe en silencieux.
+    Utilisation: .mute [durée en minutes]
+    Exemple: .mute 60
+    Résultat: Le groupe est muet pendant 60 minutes.
+
+36. UNMUTE
+    Commande: .unmute
+    Description: Retire le silencieux du groupe.
+    Utilisation: Tapez ".unmute"
+    Exemple: .unmute
+    Résultat: Le groupe n'est plus en silencieux.
+
+37. TAGADMIN
+    Commande: .tagadmin
+    Description: Tag tous les admins du groupe.
+    Utilisation: .tagadmin [message]
+    Exemple: .tagadmin "Réunion urgente !"
+    Résultat: Tous les admins sont mentionnés.
+
+38. TAGALL
+    Commande: .tagall
+    Description: Tag tous les membres du groupe.
+    Utilisation: .tagall [message]
+    Exemple: .tagall "Bonjour à tous !"
+    Résultat: Tous les membres sont mentionnés.
+
+39. GROUPINFO
+    Commande: .groupinfo
+    Description: Affiche les informations détaillées du groupe.
+    Utilisation: Tapez ".groupinfo"
+    Exemple: .groupinfo
+    Résultat: Affiche la description, nombre de membres, etc.
+
+================================================================================
+COMMANDES DE PROTECTION (GROUPES UNIQUEMENT)
+================================================================================
+
+40. ANTILINK
+    Commande: .antilink
+    Description: Active/désactive la protection contre les liens.
+    Utilisation: .antilink  ou  .antilink off  ou  .antilink list
+    Exemple: .antilink
+    Résultat: Les liens suspects sont automatiquement supprimés.
+
+41. ANTIMEDIA
+    Commande: .antimedia
+    Description: Bloque l'envoi de médias dans le groupe.
+    Utilisation: .antimedia  ou  .antimedia off
+    Exemple: .antimedia
+    Résultat: Les images/vidéos sont automatiquement supprimées.
+
+42. ANTIBOT
+    Commande: .antibot
+    Description: Empêche d'autres bots de fonctionner.
+    Utilisation: .antibot  ou  .antibot off
+    Exemple: .antibot
+    Résultat: Les messages de bots sont supprimés.
+
+43. ANTISPAM
+    Commande: .antispam
+    Description: Active la protection anti-spam.
+    Utilisation: .antispam  ou  .antispam off
+    Exemple: .antispam
+    Résultat: Les messages répétés sont supprimés.
+
+44. ANTITAG
+    Commande: .antitag
+    Description: Empêche le tag excessif de membres.
+    Utilisation: .antitag  ou  .antitag off
+    Exemple: .antitag
+    Résultat: Les messages avec trop de tags sont supprimés.
+
+45. ANTIPROMOTE
+    Commande: .antipromote
+    Description: Empêche les promotions non-autorisées.
+    Utilisation: .antipromote  ou  .antipromote off
+    Exemple: .antipromote
+    Résultat: Les promotions d'admins sont annulées.
+
+46. ANTIDEMOTE
+    Commande: .antidemote
+    Description: Empêche les rétrogradations non-autorisées.
+    Utilisation: .antidemote  ou  .antidemote off
+    Exemple: .antidemote
+    Résultat: Les rétrogradations d'admins sont annulées.
+
+47. ANTISTATUT
+    Commande: .antistatut
+    Description: Protège contre les mentions de status dans un groupe.
+    Utilisation: .antistatut  ou  .antistatut off
+    Exemple: .antistatut
+    Résultat: mentions de groupe supprimer.
+
+48. ANTITRANSFER
+    Commande: .antitransfer
+    Description: Bloque les transferts de message .
+    Utilisation: .antitransfer  ou  .antitransfer off
+    Exemple: .antitransfer
+    Résultat: Les messages transferes sont automatiquement supprimes.
+
+49. FORBIDDENWORD
+    Commande: .forbiddenword
+    Description: Gestion des mots interdits.
+    Utilisation: .forbiddenword on/off  ou  .forbiddenword add <mot>  ou  .forbiddenword remove <mot>  ou  .forbiddenword list
+    Exemple: .forbiddenword add "insulte"
+    Résultat: Le mot "insulte" est ajouté à la liste des mots interdits.
+
+50. LEVELSYSTEM
+    Commande: .levelsystem
+    Description: Active le système de niveaux par activité.
+    Utilisation: .levelsystem on  ou  .levelsystem off  ou  .levelsystem leaderboard
+    Exemple: .levelsystem on
+    Résultat: Les membres gagnent des niveaux selon leur activité.
+
+51. RESPONDER
+    Commande: .responder
+    Description: Active les réponses automatiques aux mentions.
+    Utilisation: .responder on  ou  .responder off  ou  .responder add
+    Exemple: .responder on
+    Résultat: Le bot répond automatiquement quand il est mentionné.
+
+52. GOODBYE
+    Commande: .goodbye
+    Description: Active/désactive les messages d'au revoir.
+    Utilisation: .goodbye on  ou  .goodbye off
+    Exemple: .goodbye on
+    Résultat: Les membres qui quittent reçoivent un message d'au revoir.
+
+================================================================================
+COMMANDES DE DIVERTISSEMENT
+================================================================================
+
+53. MOTIVATION
+    Commande: .motivation
+    Description: Envoie un message motivant.
+    Utilisation: Tapez ".motivation"
+    Exemple: .motivation
+    Résultat: Un message inspirant est envoyé.
+
+54. PLAYAUDIO
+    Commande: .playaudio
+    Description: Télécharge et envoie l'audio d'une vidéo YouTube.
+    Utilisation: .playaudio <titre de la video >
+    Exemple: .playaudio https://youtube.com/watch?v=abc123
+    Résultat: L'audio de la vidéo est envoyé.
+
+55. PLAYVIDEO
+    Commande: .playvideo
+    Description: Télécharge et envoie une vidéo YouTube.
+    Utilisation: .playvideo <titre de la video >
+    Exemple: .playvideo https://youtube.com/watch?v=abc123
+    Résultat: La vidéo YouTube est envoyée.
+
+56. YOUTUBE / YT
+    Commande: .youtube ou .yt
+    Description: Télécharge une vidéo YouTube.
+    Utilisation: .yt <lien YouTube>
+    Exemple: .yt https://youtube.com/watch?v=abc123
+    Résultat: La vidéo est téléchargée et envoyée.
+
+57. TIKTOK / TK
+    Commande: .tiktok ou .tk
+    Description: Télécharge une vidéo TikTok.
+    Utilisation: .tk <lien TikTok>
+    Exemple: .tk https://tiktok.com/@user/video/123456
+    Résultat: La vidéo TikTok est téléchargée et envoyée.
+
+58. QUIZ
+    Commande: .quiz
+    Description: Lance un quiz interactif dans le groupe.
+    Utilisation: .quiz <catégorie> [difficulté]
+    Exemple: .quiz general easy
+    Résultat: Un quiz commence avec des questions à choix multiples.
+
+================================================================================
+COMMANDES D'AIDE
+================================================================================
+
+59. DOC
+    Commande: .doc
+    Description: Envoie ce fichier de documentation.
+    Utilisation: Tapez ".doc"
+    Exemple: .doc
+    Résultat: Ce fichier mode d'emploi est envoyé.
+
+60. UPDATES
+    Commande: .updates
+    Description: Affiche les dernières mises à jour du bot.
+    Utilisation: Tapez ".updates"
+    Exemple: .updates
+    Résultat: Liste des nouvelles fonctionnalités ajoutées.
+
+61. ABOUT
+    Commande: .about
+    Description: Informations sur le bot et son développeur.
+    Utilisation: Tapez ".about"
+    Exemple: .about
+    Résultat: Informations générales sur VansBot.
+
+================================================================================
+COMMANDES SPÉCIALES (ADMIN DU BOT UNIQUEMENT)
+================================================================================
+
+62. ANTIDELETE
+    Commande: .antidelete
+    Description: Récupère les messages supprimés (admin du bot seulement).
+    Utilisation: .antidelete  ou  .antidelete off  ou  .antidelete list
+    Exemple: .antidelete
+    Résultat: Les messages supprimés sont automatiquement récupérés.
+
+================================================================================
+CONSEILS IMPORTANTS
+================================================================================
+
+• Toutes les commandes commencent par le préfixe défini (généralement "!")
+• Les commandes de groupe ne fonctionnent que dans les groupes WhatsApp
+• Certaines commandes nécessitent d'être admin du groupe
+• Vous pouvez mentionner quelqu'un avec @ suivi de son numéro
+• Pour répondre à un message, maintenez appuyé sur le message puis "Répondre"
+• Le bot peut traiter les images, vidéos, audios et documents
+• Les protections de groupe aident à maintenir l'ordre
+• Utilisez .menu pour voir toutes les commandes disponibles
+
+================================================================================
+DÉPANNAGE
+================================================================================
+
+• Si une commande ne marche pas, vérifiez le préfixe
+• Assurez-vous d'être dans un groupe pour les commandes de groupe
+• Vérifiez que vous êtes admin pour les commandes d'administration
+• Le bot peut être lent selon la charge du serveur
+• Certaines fonctionnalités peuvent être désactivées par l'admin
+
+================================================================================
+CONTACT ET SUPPORT
+================================================================================
+
+Pour toute question ou problème, contactez le développeur VansCode.
+N'oubliez pas : ce bot est fait pour améliorer votre expérience WhatsApp !
+================================================================================
